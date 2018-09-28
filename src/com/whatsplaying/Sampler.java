@@ -9,9 +9,9 @@ import net.bramp.ffmpeg.FFprobe;
 import net.bramp.ffmpeg.builder.FFmpegBuilder;
 
 public class Sampler {
-	FFmpeg ffmpeg;
-	FFprobe ffprobe;
-	FFmpegExecutor executor;
+	private FFmpeg ffmpeg;
+	private FFprobe ffprobe;
+	private FFmpegExecutor executor;
 	
 	public Sampler(String ffmpegPath, String ffprobePath) {
 		try {

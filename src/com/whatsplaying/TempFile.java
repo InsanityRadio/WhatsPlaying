@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.IOException;
 
 public class TempFile {
-	File tempFile;
+	private File tempFile;
 
 	public TempFile() {
 		try {

@@ -11,13 +11,13 @@ import java.nio.channels.FileChannel;
 import java.util.Scanner;
 
 public class GNSDK {
-	String libPath;
-	String javaLibPath;
-	String clientId;
-	String clientIdTag;
-	String license;
-	String clientAppVersion = "1.0.0.0";
-	GnUser gnUser;
+	private String libPath;
+	private String javaLibPath;
+	private String clientId;
+	private String clientIdTag;
+	private String license;
+	private String clientAppVersion = "1.0.0.0";
+	private GnUser gnUser;
 
 	public GNSDK(String libPath, String javaLibPath, String clientId, String clientIdTag, String license) {
 		this.libPath = libPath;

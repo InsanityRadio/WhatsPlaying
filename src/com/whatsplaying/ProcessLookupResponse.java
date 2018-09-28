@@ -7,7 +7,7 @@ class ProcessLookupResponse implements IProcessLookupResponse {
 		file.delete();
 		for(int i=0; i<tracks.length; i++) {
 			Track track = tracks[i];
-			System.out.println( "{ \"song\" : \"" + track.trackName + "\", \"artist\" : \"" + track.albumArtist + "\" }" );
+			System.out.println( "{ \"song\" : \"" + track.getTrackName() + "\", \"artist\" : \"" + track.getAlbumArtist() + "\" }" );
 		}
 		
 	}
