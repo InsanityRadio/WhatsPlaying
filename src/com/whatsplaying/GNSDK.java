@@ -11,21 +11,10 @@ import java.nio.channels.FileChannel;
 import java.util.Scanner;
 
 public class GNSDK {
-	private String libPath;
-	private String javaLibPath;
-	private String clientId;
-	private String clientIdTag;
-	private String license;
 	private String clientAppVersion = "1.0.0.0";
 	private GnUser gnUser;
 
 	public GNSDK(String libPath, String javaLibPath, String clientId, String clientIdTag, String license) {
-		this.libPath = libPath;
-		this.javaLibPath = javaLibPath;
-		this.clientId = clientId;
-		this.clientIdTag = clientIdTag;
-		this.license = license;
-
 		//Attempt to load gnsdk_java
 		try {
 			System.load(javaLibPath + "/libgnsdk_java_marshal.dylib");
