@@ -18,6 +18,7 @@ class ProcessLookupResponse implements IProcessLookupResponse {
 			previousTrack = tracks[0];
 		}
 	}
+	
 	void publishTrack(Track track) {
 		previousPublishedTrack = track;
 		System.out.println( "{ \"song\" : \"" + track.getTrackName() + "\", \"artist\" : \"" + track.getAlbumArtist() + "\" }" );

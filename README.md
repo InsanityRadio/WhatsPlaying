@@ -14,7 +14,6 @@ DJ performing a live mix? Presenter playing their favourite CD? Or just need a s
 
 # Dependencies
  - FFmpeg
- - FFprobe
  - Gracenote GNSDK
 
 # Bugs, Future Development ...

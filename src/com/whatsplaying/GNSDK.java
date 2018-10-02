@@ -90,6 +90,7 @@ public class GNSDK {
 			idStream.identifyAlbum();
 		} catch (Exception e) {
 			System.err.println(e.getMessage());
+			e.printStackTrace();
 		}
 	}
 
