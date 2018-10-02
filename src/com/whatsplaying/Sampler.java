@@ -10,14 +10,12 @@ import net.bramp.ffmpeg.builder.FFmpegBuilder;
 
 public class Sampler {
 	private FFmpeg ffmpeg;
-	private FFprobe ffprobe;
 	private FFmpegExecutor executor;
 	
 	public Sampler(String ffmpegPath, String ffprobePath) {
 		try {
 			ffmpeg = new FFmpeg(ffmpegPath);
-			ffprobe = new FFprobe(ffprobePath);
-			executor = new FFmpegExecutor(ffmpeg, ffprobe);
+			executor = new FFmpegExecutor(ffmpeg);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
