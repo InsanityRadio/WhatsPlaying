@@ -1,5 +1,7 @@
 package com.whatsplaying;
 
+import org.json.JSONObject;
+
 class ProcessLookupResponse implements IProcessLookupResponse {
 	Track previousTrack = new Track(null, null, null, 0);
 	Track previousPublishedTrack = new Track(null, null, null, 0);
@@ -21,7 +23,11 @@ class ProcessLookupResponse implements IProcessLookupResponse {
 	
 	void publishTrack(Track track) {
 		previousPublishedTrack = track;
-		System.out.println( "{ \"song\" : \"" + track.getTrackName() + "\", \"artist\" : \"" + track.getAlbumArtist() + "\" }" );
+		String jsonOutput = new JSONObject()
+				.put("song", track.getTrackName())
+				.put("artist", track.getAlbumArtist())
+				.toString();
+		System.out.println(jsonOutput);
 	}
 
 }
